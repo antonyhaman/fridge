@@ -1,0 +1,33 @@
+server:
+  port: 8000
+  compression:
+    enabled: true
+    mime-types: text/html,text/css,application/javascript,application/json
+fridge:
+  mongodb:
+    host: localhost
+    port: 27017
+    database: fridge
+  server:
+    info:
+      build-number: ${BUILD_NUMBER}
+      name: Fridge
+      description: Provides CRUD operations for Fridge
+      display-name: Fridge as usual
+db:
+  host: localhost
+  port: 27017
+  db: fridge
+  username:
+  password:
+  show-sql: true
+  autocommit: true
+  driver:
+  dialect:
+  action: update
+logging:
+  level:
+      com:
+        trident: DEBUG
+      org:
+        springframework: INFO
